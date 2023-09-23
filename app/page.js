@@ -9,17 +9,17 @@ export default function Home(props) {
         <Link className='font-bold mr-3 text-xl underline' href="/" >Home</Link>
         <Link className='font-bold mr-3 text-xl underline' href="/" >Notes</Link>
       </navbar>
-      <div className="bg-blue">
+      <div className="bg-blue ">
         <div className="flex flex-col-3 pt-5 py-3">
           <h1 className='font-extrabold from-stone-950 mt-4 text-3xl' >Notes</h1>
         </div>
-        <div className="flex flex-wrap justify-between bg-green-10 ">
+        <div className="flex flex-wrap items-stretch place-items-start bg-green-10 ">
           {Notes.map((note) => {
             return (
-              <div key={note.id} className="bg-customYellow w-80 h-50 pt-8 pr-8  pl-2 mr-4 my-1 h-auto border-r-8 border-r-slate-200 border-b-8 border-b-slate-200 border-r-3">
-                <h3 className='font-bold  text-lg pb-1' >{note.noteTitle}</h3>
+              <div key={note.id} className="bg-customYellow flex flex-col w-80 min-h-70 space-y-auto pt-8 pr-8  pl-2 mr-4 my-1 h-auto border-r-8 border-r-slate-200 border-b-8 border-b-slate-200 border-r-3">
+                <h3 className='font-bold  text-lg pb-1 mt-0' >{note.noteTitle}</h3>
                 <p className='font-medium mt-1' >{note.noteContent} </p>
-                <p className='font-mono text-xs pt-10 pb-2' >{note.createdAt}</p>
+                <p className='font-mono text-xs pt-10 pb-2 mt-auto' >{note.createdAt}</p>
               </div>
             )
           })}

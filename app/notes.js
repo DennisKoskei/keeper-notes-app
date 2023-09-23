@@ -24,6 +24,12 @@ const notes = [
 		noteTitle: "Assignments",
 		noteContent: "Ensure that I get to do the assignments that I said i would do",
 		createdAt: "22/09/2023"
+	},
+	{
+		id: "5",
+		noteTitle: "What am I doing?",
+		noteContent: "if something burns your sould with purpose and desire, it's your duty to be reduced to ashes by it. Any other form of existence will be yet another dull book in the library of life.",
+		createdAt: "23/09/2023"
 	}
 
 ];
